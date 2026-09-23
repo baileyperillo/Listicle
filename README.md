@@ -32,6 +32,8 @@ The following **additional** features are implemented:
 
 <video controls src="Kapture 2026-09-23 at 05.16.14.mp4" title="Title"></video>
 
+![alt text](WEB103Lab1.gif)
+
 **Note: please be sure to 
 
 Here's a walkthrough of implemented required features:
