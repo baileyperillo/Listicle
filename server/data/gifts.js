@@ -52,7 +52,7 @@ const giftData = [
         "name": "Valko",
         "audience": "Werewolves, vigilantes, meet-cute",
         "image":"",
-        "description":"Deleted Charater",
+        "description":"Deleted Charater. #BringValkoBack",
         "colors": "burgundy, black"
     }
 ]
