@@ -30,7 +30,7 @@ const renderGifts = async () => {
       const link = document.createElement('a')
       link.textContent = 'Read More >'
       link.setAttribute('role', 'button')
-      link.href = `/gifts/${gift.id}`
+      link.href = `/gifts/${encodeURIComponent(gift.name)}`
       bottomContainer.appendChild(link)
 
       card.appendChild(topContainer)

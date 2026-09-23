@@ -1,16 +1,16 @@
 const renderGift = async () => {
 
-    const requestedID = parseInt(window.location.href.split('/').pop())
+    const requestedName = decodeURIComponent(window.location.pathname.split('/').pop())
 
     const response = await fetch('/gifts')
     const data = await response.json()
 
     const giftContent = document.getElementById('gift-content')
 
-    let gift = data.find(gift => gift.id === requestedID)
+    let gift = data.find(gift => gift.name === requestedName)
 
     if (gift) {
-        document.getElementById('image').src = gift.image
+        document.getElementById('image').src = `/${gift.image}`
         document.getElementById('name').textContent = gift.name
         document.getElementById('description').textContent = gift.description
         document.getElementById('audience').textContent = 'Great For: ' + gift.audience
