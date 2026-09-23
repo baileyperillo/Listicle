@@ -14,7 +14,7 @@ const renderGift = async () => {
         document.getElementById('name').textContent = gift.name
         document.getElementById('description').textContent = gift.description
         document.getElementById('audience').textContent = 'Great For: ' + gift.audience
-        document.getElementById('color').textContent = 'Color: ' + gift.color
+        document.getElementById('color').textContent = 'Colors: ' + gift.colors
         document.title = `Listicle - ${gift.name}`
         
     }
